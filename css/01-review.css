@@ -1,0 +1,117 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "JetBrains Mono";
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.left {
+    background-color: cornflowerblue;
+}
+
+@media (min-width: 200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav>ul,
+    nav>figure {
+        display: none;
+    }
+
+    nav>aside {
+        width: 25vh;
+        height: 25vh;
+        background-image: url("../static/img/logo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    header {
+        height: 50vh;
+        background-image: url("../static/img/landscape_00000.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header>article {
+        background-color: rgba(50, 50, 50, 0.6);
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        color: whitesmoke;
+    }
+
+    header>h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .right>article {
+        padding: 5%;
+    }
+
+    .right h2 {
+        border-bottom: 4px solid teal;
+        text-transform: uppercase;
+    }
+
+    .right>section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .right aside {
+        float: left;
+        width: 15vh;
+        height: 15vh;
+        background-image: url("../static/img/logo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 600px) {
+    nav {
+        justify-content: space-evenly;
+    }
+
+    nav>ul {
+        border: 1px solid red;
+        display: block;
+    }
+}
+
+@media (min-wodth: 10000px) {
+    nav {
+        justify-content: space-evenly;
+    }
+}
