@@ -1,11 +1,17 @@
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+:root {
+    --purple: #9999CC;
+    --orchid: #CC9999;
+    --contact: #99CC99;
+}
+
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 body {
@@ -16,13 +22,10 @@ body {
     row-gap: 3vh;
 }
 
-:root {
-    --purple: #9999CC;
-    --orchid: #CC9999;
-    --contact: #99CC99;
-}
-
+/* MOBILE DEVICE VERSION */
 @media (min-width: 200px) {
+
+    /* HEADER SECTION */
     header {
         display: flex;
         flex-direction: column;
@@ -37,81 +40,169 @@ body {
         text-align: center;
     }
 
+    header>article:last-child {
+        background-color: gainsboro;
+    }
+
     header h1 {
-        font-weight: 300;
-
-    }
-
-    header nav {
-        background-color: rgb(200, 200, 200);
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    header ul {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        row-gap: 3vh;
-        column-gap: 3vh;
-    }
-
-    header li {
-        width: 40%;
-        height: 40%;
-        display: flex;
-    }
-
-    header a {
-        text-decoration: none;
-        background-color: rgb(250, 250, 250);
-        color: black;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 1vh;
-        justify-content: center;
-        padding: 15%;
-    }
-
-    header a:hover {
-        background-color: var(--orchid);
+        font-weight: 500;
     }
 
     header h3 {
-        padding: 1vh;
+        font-weight: 500;
     }
 
+    header ul {
+        padding: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3vh;
+        justify-content: center;
+    }
 
-    .contact {
+    header li {
+        width: 15vh;
+        height: 15vh;
+        display: flex;
+        background-color: whitesmoke;
+    }
+
+    header a {
         width: 100%;
+        height: 100%;
+        padding-left: 20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 3vh;
+        color: dimgray;
+        text-decoration: none;
     }
 
-    .contact section {
+    /* HEADER END */
+
+    /* CONTACT SECTION */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--contact);
+        padding-bottom: 10%;
+    }
+
+    .contact>article {
+        padding: 15%;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 20px;
+    }
+
+    .contact h2 {
+        font-weight: 400;
+    }
+
+    .contact>section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        padding-top: 3vh;
+        background-color: white;
+        padding-bottom: 3vh;
+    }
+
+    .contact form {
         display: flex;
         flex-direction: column;
         row-gap: 3vh;
     }
 
-    .contact article {
-        width: 100%;
-        height: 100%;
+    .contact article p {
+        line-height: 2;
+        text-align: justify;
+        color: dimgray;
     }
 
-    .contact iframe {
-        width: 100%;
-        height: 100%;
+    .contact>section>article {
+        background-color: gainsboro;
+        padding: 10%;
     }
 
-    figure {
-        width: 100%;
+    .contact>section>article:last-child {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
     }
 
-    img {
-        width: 100%;
+    .contact aside a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: dimgray;
     }
+
+    form>* {
+        background-color: transparent;
+        border: 0px none transparent;
+        border-bottom: 1px solid dimgray;
+    }
+
+    textarea {
+        height: 20vh;
+        resize: none;
+    }
+
+    iframe {
+        border: 0px none transparent;
+        height: 60vh;
+    }
+
+    ::placeholder {
+        color: dimgray;
+        font-size: 16px;
+    }
+
+    [type="text"],
+    [type="email"] {
+        padding: 3%;
+    }
+
+    [type="submit"] {
+        background-color: var(--contact);
+        width: 35%;
+        padding: 3% 5%;
+        color: whitesmoke;
+        font-weight: 600;
+        border: 0px none;
+        font-size: 16px;
+        align-self: flex-end;
+    }
+
+    /* CONTACT SECTION END */
+
+    /* FOOTER SECTION */
+    footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        padding: 5%;
+    }
+
+    footer>article {
+        display: flex;
+        justify-content: center;
+        column-gap: 3vh;
+    }
+
+    footer i {
+        font-size: 20px;
+        color: dimgray;
+        background-color: gainsboro;
+        padding: 5%;
+    }
+
+    footer span {
+        text-align: center;
+    }
+
+    /* FOOTER SECTION END */
+
 }
