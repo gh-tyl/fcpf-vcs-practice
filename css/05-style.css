@@ -1,4 +1,117 @@
 * {
     padding: 0%;
     margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+:root {
+    --purple: #9999CC;
+    --orchid: #CC9999;
+    --contact: #99CC99;
+}
+
+@media (min-width: 200px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header>article:first-child {
+        background-color: var(--purple);
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-size: 26px;
+        padding: 15%;
+        text-align: center;
+    }
+
+    header h1 {
+        font-weight: 300;
+
+    }
+
+    header nav {
+        background-color: rgb(200, 200, 200);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    header ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3vh;
+        column-gap: 3vh;
+    }
+
+    header li {
+        width: 40%;
+        height: 40%;
+        display: flex;
+    }
+
+    header a {
+        text-decoration: none;
+        background-color: rgb(250, 250, 250);
+        color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        justify-content: center;
+        padding: 15%;
+    }
+
+    header a:hover {
+        background-color: var(--orchid);
+    }
+
+    header h3 {
+        padding: 1vh;
+    }
+
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    .contact article {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
 }
