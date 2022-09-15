@@ -386,3 +386,175 @@ body {
     /* FOOTER SECTION END */
 
 }
+
+/* TABLET DEVICES VERSION */
+@media (min-width: 600px) {
+
+    main {
+        row-gap: 2vh;
+    }
+
+    /* HEADER SECTION */
+
+    header>article:first-child {
+        padding: 7%;
+    }
+
+    header ul {
+        padding: 2%;
+        justify-content: right;
+    }
+
+    header li {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    header a {
+        transition: .4s;
+    }
+
+    header a:hover {
+        background-color: var(--orchid);
+        color: whitesmoke;
+    }
+
+    /* HEADER SECTION END */
+
+    /* ABOUT SECTION */
+    .about {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about>article {
+        padding: 5%;
+        row-gap: 2vh;
+    }
+
+    .about img {
+        height: 70vh;
+    }
+
+    .about a {
+        padding: 3%;
+        width: 20%;
+        transition: .4s;
+    }
+
+    .about a:hover {
+        background-color: dimgray;
+    }
+
+    /* ABOUT SECTION END */
+
+    /* BLOCK SECTION */
+    .block {
+        padding: 5% 0%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .block>aside {
+        width: 25%;
+    }
+
+    .block i {
+        font-size: 70px;
+    }
+
+    /* BLOCK SECTION END */
+
+    /* SERVICES SECTION */
+    .services {
+        padding-left: 5%;
+        padding-right: 5%;
+        row-gap: 2vh;
+    }
+
+    .services a {
+        padding: 1%;
+        width: 20%;
+        transition: .4s;
+    }
+
+    .services a:hover {
+        background-color: var(--orchid);
+    }
+
+    .services aside {
+        padding: 5%;
+    }
+
+    blockquote {
+        padding: 10%;
+    }
+
+    /* SERVICES SECTION END */
+
+    /* GALLERY SECTION */
+    .gallery {
+        row-gap: unset;
+    }
+
+    .gallery>article {
+        row-gap: 2vh;
+        justify-content: center;
+        padding: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .gallery h2 {
+        width: 100%;
+        text-align: right;
+    }
+
+    .gallery>figure {
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 3vh;
+    }
+
+    .gallery img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .gallery a {
+        transition: .4s;
+    }
+
+    .gallery a:hover {
+        color: whitesmoke;
+    }
+
+    /* GALLERY SECTION END */
+
+    /* CONTACT SECTION */
+    .contact {
+        padding-bottom: 5%;
+    }
+
+    .contact>article {
+        padding: 5%;
+    }
+
+    iframe {
+        height: 35vh;
+    }
+
+    /* CONTACT SECTION END */
+
+    footer i {
+        font-size: 16px;
+        padding: 2%;
+    }
+
+    footer span {
+        color: dimgray;
+    }
+}
