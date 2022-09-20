@@ -1,0 +1,35 @@
+@media (min-width: 200px) {
+    header {
+        color: whitesmoke;
+        @include bgPic("/img/banner.jpg", inherit, 50vh);
+
+        >nav {
+            @include flexBox(row);
+        }
+
+        ul {
+            display: none;
+        }
+
+        article {
+            @include flexBoxDefault(row, center, center);
+        }
+
+        h2 {
+            width: 60%;
+        }
+
+    }
+
+    figure {
+        width: 20%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .works {
+        @include flexBoxColumn;
+    }
+}
