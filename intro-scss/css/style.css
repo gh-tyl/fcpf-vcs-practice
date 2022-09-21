@@ -45,6 +45,11 @@ input {
 }
 
 @media (min-width: 200px) {
+  main > section > a {
+    text-align: center;
+    padding: 2%;
+    font-size: 23px;
+  }
   header {
     color: whitesmoke;
     background-image: url("/img/banner.jpg");
@@ -61,19 +66,59 @@ input {
   header ul {
     display: none;
   }
-  header article {
+  header h1 {
+    padding: 3%;
+    font-family: "Lobster" cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  header > article {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 60%;
   }
   header h2 {
+    font-size: 20px;
     width: 60%;
   }
-  figure {
-    width: 20%;
+  header span {
+    color: #EC664D;
   }
-  img {
-    width: 100%;
+  .work {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #2E3E4E;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: center;
+  }
+  .work > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .work p {
+    font-size: 14px;
+  }
+  .work h2 {
+    color: #EC664D;
+  }
+  .work > figure {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    row-gap: 2vh;
+  }
+  .work img {
+    width: 15vh;
+    height: 15vh;
   }
 }/*# sourceMappingURL=style.css.map */

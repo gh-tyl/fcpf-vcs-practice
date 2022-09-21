@@ -1,7 +1,16 @@
 @media (min-width: 200px) {
+
+    main>section>a {
+        text-align: center;
+        padding: 2%;
+        font-size: 23px;
+    }
+
     header {
         color: whitesmoke;
-        @include bgPic("/img/banner.jpg", inherit, 50vh);
+        @include bgPic("/img/banner.jpg",
+            inherit,
+            50vh);
 
         >nav {
             @include flexBox(row);
@@ -11,25 +20,63 @@
             display: none;
         }
 
-        article {
-            @include flexBoxDefault(row, center, center);
+        h1 {
+            padding: 3%;
+            font-family: $h1Title;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        >article {
+            @include flexBoxDefault(row,
+                center,
+                center);
+            height: 60%;
         }
 
         h2 {
+            font-size: $mobileTitleSizeH2;
             width: 60%;
         }
 
+        span {
+            color: $defaultRed;
+        }
     }
 
-    figure {
-        width: 20%;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .works {
+    .work {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: $bgColorBlue;
         @include flexBoxColumn;
+        row-gap: 3vh;
+        align-items: center;
+
+        >article {
+            @include flexBoxColumn;
+            row-gap: 5vh;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        h2 {
+            color: $defaultRed;
+        }
+
+        >figure {
+            width: 90%;
+            @include flexBoxWrap(row, wrap);
+            column-gap: 2vh;
+            row-gap: 2vh;
+        }
+
+        img {
+            width: 15vh;
+            height: 15vh;
+        }
     }
 }
