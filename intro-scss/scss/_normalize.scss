@@ -24,15 +24,23 @@ p {
     line-height: 1.5;
 }
 
-[class*="chevron"] {
+a {
     text-decoration: none;
-    color: $defaultRed;
-    border-radius: 50%;
-    border: 2px solid $defaultRed;
 }
 
 input {
     background-color: transparent;
     border: 0px none;
     border-bottom: 1px solid whitesmoke;
+}
+
+[class*="chevron"] {
+    text-decoration: none;
+    color: $defaultRed;
+    border-radius: 50%;
+    border: 4px solid $defaultRed;
+}
+
+main>section:nth-child(even) h2 {
+    color: $defaultRed;
 }

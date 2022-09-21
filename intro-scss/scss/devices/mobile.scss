@@ -44,6 +44,98 @@
         }
     }
 
+    footer {
+        padding: 3% 0;
+        line-height: 1.5;
+        text-align: center;
+        border-top: 0.5px solid lightgray;
+        color: whitesmoke;
+        background-color: $bgColorBlue;
+        font-size: 16px;
+
+        >a {
+            color: $defaultRed;
+        }
+    }
+
+    .about {
+        @include flexBoxColumn;
+        align-items: center;
+        row-gap: 4vh;
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+        >h2 {
+            color: $bgColorBlue;
+        }
+
+        >article {
+            @include flexBox(row);
+            justify-content: center;
+            align-items: center;
+            column-gap: 2vh;
+
+            >aside {
+                @include bgPic("/img/pic-9.jpg");
+                border-radius: 50%;
+            }
+
+            p {
+                font-size: 14px;
+                text-align: center;
+                color: dimgray;
+            }
+
+            p::after {
+                content: "Lorem ipsum.";
+            }
+        }
+
+        >section {
+            width: 90%;
+            @include flexBoxColumn;
+            row-gap: 2vh;
+        }
+
+        div {
+            width: 50%;
+        }
+
+        ul {
+            @include flexBoxColumn;
+            row-gap: 3vh;
+            list-style-type: none;
+
+            article {
+                display: flex;
+                justify-content: space-between;
+                width: 75%;
+            }
+
+            aside {
+                background-color: gainsboro;
+                height: 2vh;
+            }
+        }
+
+        h6 {
+            width: 75%;
+            height: 2vh;
+            background-color: $defaultRed;
+        }
+
+        li {
+            @include flexBoxColumn;
+            row-gap: 2vh;
+            width: 100%;
+        }
+
+        span {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
     .work {
         padding-top: 10%;
         padding-bottom: 10%;
@@ -78,5 +170,132 @@
             width: 15vh;
             height: 15vh;
         }
+    }
+
+    .services {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        @include flexBoxColumn;
+        align-items: center;
+        row-gap: 2vh;
+
+        >article {
+            @include flexBoxColumn;
+            row-gap: 2vh;
+
+            >p {
+                font-size: 14px;
+            }
+        }
+
+        h2 {
+            color: $bgColorBlue;
+        }
+
+        p {
+            padding: 2%;
+            text-align: center;
+        }
+
+        >section {
+            @include flexBoxColumn;
+            row-gap: 5vh;
+        }
+
+        aside {
+            @include flexBoxColumn;
+            align-items: center;
+            row-gap: 3vh;
+
+            >a {
+                width: 20vh;
+                height: 20vh;
+                background-color: $defaultRed;
+                border-radius: 50%;
+                color: whitesmoke;
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .4s;
+                border: 1px solid $defaultRed;
+            }
+
+            >h3 {
+                line-height: 1.5;
+                text-transform: uppercase;
+                color: $bgColorBlue;
+            }
+
+            >p {
+                color: dimgray;
+                width: 70%;
+            }
+        }
+    }
+
+    .contact {
+        color: whitesmoke;
+        background-color: $bgColorBlue;
+        @include flexBoxColumn;
+        row-gap: 5vh;
+        padding: 10% 5%;
+
+        >article {
+            @include flexBoxColumn;
+            row-gap: 2vh;
+        }
+
+        form {
+            @include flexBoxColumn;
+            row-gap: 2vh;
+
+            >article {
+                @include flexBoxColumn;
+                row-gap: 2vh;
+                align-items: center;
+            }
+
+            >article:last-child {
+                row-gap: 10vh;
+            }
+        }
+
+        aside {
+            @include flexBoxDefault(row,
+                center,
+                center);
+            column-gap: 5vh;
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        a {
+            color: whitesmoke;
+            font-size: 20px;
+        }
+    }
+
+    input {
+        font-size: 16px;
+        padding: 2%;
+        width: 100%;
+    }
+
+    [type="submit"] {
+        border: 1px solid whitesmoke;
+        width: 45%;
+        padding: 3%;
+        color: whitesmoke;
+        text-transform: uppercase;
+        transition: .4s;
+    }
+
+    ::placeholder {
+        color: whitesmoke;
     }
 }
