@@ -1,0 +1,123 @@
+@media (min-width: 600px) {
+
+    main>section {
+        padding-top: 5% !important;
+        padding-bottom: 5% !important;
+    }
+
+    main>section>a {
+        padding: 0.7vw;
+    }
+
+    main>section h2 {
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    section>article>p::after {
+        content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quos dolorum, quis, ex labore cum adipisci, magnam explicabo incidunt quidem pariatur deleniti alias ab modi.";
+    }
+
+    header {
+
+        h2 {
+            width: 50%;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    }
+
+    .about {
+
+        >article {
+            column-gap: 0;
+            justify-content: space-evenly;
+
+            >aside {
+                width: 25vh;
+                height: 25vh;
+            }
+
+            p::after {
+                content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quos dolorum, quis, ex labore cum adipisci.";
+            }
+        }
+
+
+
+        li {
+            row-gap: 1vh;
+
+            >aside,
+            h6 {
+                height: 1.5vh;
+            }
+        }
+    }
+
+    .work {
+
+        >figure {
+            justify-content: center;
+        }
+    }
+
+    .services {
+
+        >section {
+            flex-direction: row;
+        }
+
+        aside {
+            row-gap: 1vh;
+
+            >a {
+                font-size: 50px;
+                width: 10vh;
+                height: 10vh;
+            }
+
+            >a:hover {
+                background-color: white;
+                color: $defaultRed;
+            }
+        }
+    }
+
+    .contact {
+        padding-bottom: 10% !important;
+
+        form {
+
+            >article:first-child {
+                flex-direction: row;
+                column-gap: 3vh;
+            }
+
+            >article:last-child {
+                align-items: unset;
+            }
+        }
+
+        [placeholder*="Message"] {
+            width: 85%;
+        }
+
+    }
+
+    [type="submit"] {
+        width: 25%;
+        align-self: center;
+
+        &:hover {
+            background-color: whitesmoke;
+            color: $bgColorBlue;
+        }
+    }
+
+    input {
+        padding: 3% 0;
+        width: 30%;
+    }
+}
