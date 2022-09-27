@@ -1,83 +1,83 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: $fontFamily;
-    color: dimgray;
+   padding: 0;
+   margin: 0;
+   font-family: $fontFamily;
+   color: dimgray;
 }
 
 html {
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 body {
-    @include flexBoxColumn;
+   @include flexBoxColumn;
 }
 
-main>section:nth-child(even) {
-    background-color: $defaultSectionBg;
+main>section:nth-child(odd) {
+   background-color: $defaultSectionBg;
 }
 
 main>section:last-child {
-    background-color: $contactBg;
+   background-color: $contactBg;
 }
 
 main>section {
-    padding-top: 5%;
-    padding-bottom: 5%;
+   padding-top: 5%;
+   padding-bottom: 5%;
 }
 
 h2 {
-    text-transform: uppercase;
+   text-transform: uppercase;
 }
 
 h3 {
-    text-transform: capitalize;
+   text-transform: capitalize;
 }
 
 p {
-    line-height: 1.5;
+   line-height: 1.5;
 }
 
 a {
-    text-decoration: none;
+   text-decoration: none;
 }
 
 i {
-    color: whitesmoke;
+   color: whitesmoke;
 }
 
 input,
 textarea {
-    padding: 1%;
-    border: 1px solid $defaultSectionBg;
-    background-color: transparent;
+   padding: 2%;
+   border: 0.3px solid;
+   background-color: transparent;
 }
 
 footer {
-    padding: 5%;
-    border-top: 1px solid $defaultSectionBg;
-    background-color: $footerBg;
-    text-align: center;
-    @include flexBoxColumn;
-    row-gap: 2vh;
+   padding: 5%;
+   border-top: 1px solid $defaultSectionBg;
+   background-color: $footerBg;
+   text-align: center;
+   @include flexBoxColumn;
+   row-gap: 2vh;
 
-    >aside {
-        display: flex;
-        justify-content: center;
-        column-gap: 2vh;
-    }
+   >aside {
+      display: flex;
+      justify-content: center;
+      column-gap: 2vh;
+   }
 
-    a {
-        width: 5vh;
-        height: 5vh;
-        border: 1px solid $defaultSectionBg;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+   a {
+      width: 5vh;
+      height: 5vh;
+      border: 1px solid $defaultSectionBg;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
 }
 
 ::placeholder {
-    color: $defaultSectionBg;
+   color: $defaultSectionBg;
 }

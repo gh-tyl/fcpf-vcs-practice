@@ -1,0 +1,93 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: dimgray;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+main > section:last-child {
+  background-color: #303030;
+}
+
+main > section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: whitesmoke;
+}
+
+input, textarea {
+  padding: 1%;
+  border: 1px solid #F9F9F9;
+  background-color: transparent;
+}
+
+footer {
+  padding: 5%;
+  border-top: 1px solid #F9F9F9;
+  background-color: #202020;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+}
+footer > aside {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 2vh;
+       column-gap: 2vh;
+}
+footer a {
+  width: 5vh;
+  height: 5vh;
+  border: 1px solid #F9F9F9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::-moz-placeholder {
+  color: #F9F9F9;
+}
+
+:-ms-input-placeholder {
+  color: #F9F9F9;
+}
+
+::placeholder {
+  color: #F9F9F9;
+}/*# sourceMappingURL=style.css.map */
