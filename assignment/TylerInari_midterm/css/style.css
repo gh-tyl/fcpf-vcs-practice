@@ -1,0 +1,519 @@
+* {
+    /* SANITIZE */
+    padding: 0%;
+    margin: 0%;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(20, 40, 80);
+}
+
+
+@media (min-width: 300px) {
+
+    /* Start header */
+    nav {
+        display: none;
+    }
+
+    header {
+        background-image: url("../img/banner.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header article {
+        height: 100%;
+        background-color: rgba(50, 50, 50, 0.6);
+    }
+
+    header aside:first-child {
+        width: 100%;
+        height: 40%;
+    }
+
+    header h1 {
+        color: whitesmoke;
+        width: 50%;
+        text-align: left;
+        padding: 3%;
+    }
+
+    header aside:last-child {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    header h4 {
+        color: whitesmoke;
+        text-transform: uppercase;
+    }
+
+    header span {
+        color: orangered;
+    }
+
+    /* End header */
+
+    /* Start common */
+    main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    h2 {
+        width: 96%;
+        padding: 2%;
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2vh;
+        padding-bottom: 5%;
+    }
+
+    .about,
+    .services,
+    .contact {
+        padding-left: 3vh;
+        padding-right: 3vh;
+    }
+
+    section:nth-child(odd) {
+        background-color: whitesmoke;
+    }
+
+    section:nth-child(even) h2 {
+        color: orangered;
+    }
+
+    section:nth-child(even) p {
+        color: whitesmoke;
+    }
+
+    .fa-custom {
+        color: orangered;
+        border: 2px solid orangered;
+        border-radius: 50%;
+        padding: 10%;
+    }
+
+    /* End common */
+
+    /* Start about */
+    .about {
+        row-gap: 2vh;
+    }
+
+    .about figure {
+        width: 100%;
+        display: flex;
+    }
+
+    .about img {
+        width: 20vh;
+        padding: 5%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .about figcaption {
+        width: 46%;
+        text-align: justify;
+        padding: 2%;
+    }
+
+
+    .progress-wrappers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vh;
+    }
+
+    .progress-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    .progress-text {
+        display: flex;
+        width: 75%;
+    }
+
+    .progress-text p:first-child {
+        width: 70%;
+        text-transform: uppercase;
+    }
+
+    .progress-text p:last-child {
+        width: 30%;
+        text-align: right;
+    }
+
+    .progress-bar {
+        background-color: gainsboro;
+        width: 100%;
+        height: 3vh;
+    }
+
+    .bar {
+        background-color: orangered;
+        width: 75%;
+        height: 3vh;
+    }
+
+    /* End about */
+
+    /* Start Works */
+    .works {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2vh;
+    }
+
+    .works figure {
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1vh;
+        column-gap: 1vh;
+        padding-left: 5%;
+    }
+
+    .works img {
+        width: 30%;
+    }
+
+    /* End Works */
+
+
+    /* Start Services*/
+    .services article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+        align-items: center;
+    }
+
+    .services aside {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2vh;
+    }
+
+    .services aside i {
+        font-size: 36px;
+        color: whitesmoke;
+        background-color: orangered;
+        padding: 12%;
+        border-radius: 50%;
+    }
+
+    .services span {
+        color: rgb(20, 40, 80);
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .services p {
+        text-align: center;
+    }
+
+    /* End Services*/
+
+    /* Start Contact*/
+    .contact aside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact a {
+        color: whitesmoke;
+        padding: 1%;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2vh;
+    }
+
+    input {
+        width: 80%;
+        color: whitesmoke;
+        background-color: rgb(20, 40, 80);
+        border: none;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    [type="submit"] {
+        width: fit-content;
+        padding: 10%;
+        border: 1px solid whitesmoke;
+        font-size: 8px;
+    }
+
+    /* End Contact*/
+
+    /* Start Footer */
+    footer {
+        background-color: rgb(20, 40, 80);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        color: whitesmoke;
+        text-align: center;
+        width: 80%;
+        padding: 5%;
+        border-top: 1px solid whitesmoke;
+    }
+
+    footer span {
+        color: orangered;
+    }
+
+    /* End Footer */
+}
+
+@media (min-width: 700px) {
+
+    /* Start common */
+    h2 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .fa-custom {
+        font-size: 36px;
+    }
+
+    /* End */
+
+    /* Start about */
+    .about img {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    /* End */
+
+    /* Start works */
+    .works figure {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .works img {
+        width: 20%;
+    }
+
+    /* End */
+
+    /* Start services */
+    .services article {
+        flex-direction: row;
+    }
+
+    /* End */
+
+    /* Start Contact */
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 5vh;
+        column-gap: 2vh;
+    }
+
+    input {
+        width: 30%;
+    }
+
+    input:nth-child(4) {
+        width: 80%;
+    }
+
+    form p {
+        width: 100%;
+        padding: 5%;
+    }
+
+    [type="submit"] {
+        width: 30%;
+        text-align: center;
+        padding: 2%;
+        font-size: 12px;
+    }
+
+    /* End */
+}
+
+@media (min-width: 1000px) {
+
+    /* start common */
+
+    /* end common */
+
+    /* Start header*/
+    header {
+        height: 50vh;
+    }
+
+    header article {
+        padding-left: 25vh;
+        padding-right: 25vh;
+    }
+
+    header aside {
+        width: 100%;
+        display: flex;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        width: 50%;
+        display: flex;
+        padding: 3%;
+        height: fit-content;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        height: fit-content;
+    }
+
+    nav li {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+
+    nav a {
+        text-transform: uppercase;
+        color: whitesmoke;
+        text-decoration: none;
+        width: 100%;
+        height: fit-content;
+        font-size: 10px;
+    }
+
+    nav a:hover {
+        color: orangered;
+    }
+
+    header h4 {
+        font-size: 24px;
+    }
+
+    /* End */
+
+
+    /* Start */
+    /* End */
+    .about,
+    .services,
+    .contact {
+        padding-left: 25vh;
+        padding-right: 25vh;
+    }
+
+    /* Start about */
+    .progress-wrappers {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .progress-wrapper {
+        width: 48%;
+    }
+
+
+    /* End */
+
+    /* Start works */
+    .works {
+        width: 100%;
+    }
+
+    .works p,
+    .works figure {
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+
+    .works figure {
+        row-gap: 3vh;
+        column-gap: 3vh;
+    }
+
+    /* End */
+
+    /* Start */
+    input:nth-child(4) {
+        width: 60%;
+    }
+
+    form p {
+        padding: 0%;
+        width: 35%;
+        display: flex;
+        justify-content: right;
+    }
+
+    [type="submit"] {
+        width: 60%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    /* End */
+    /* Start */
+    /* End */
+    /* Start */
+    /* End */
+    /* Start */
+    /* End */
+}

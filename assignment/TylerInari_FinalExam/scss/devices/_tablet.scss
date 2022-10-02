@@ -1,0 +1,135 @@
+@media (min-width: 700px) {
+    .container {
+        padding: 5% 8%;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    nav {
+        @include fbRow;
+        background-color: $defaultBlue;
+
+        .container {
+            @include fbRow;
+            padding: 0%;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .branding {
+            width: 20%;
+        }
+
+        h1 {
+            color: $defaultBlue;
+            font-size: 20px;
+            margin: 0%;
+        }
+
+        ul {
+            @include fbRow;
+            // @include fbExtend(center, center);
+            align-items: center;
+            column-gap: 3vh;
+            flex-direction: row-reverse;
+            width: 80%;
+            height: fit-content;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        li {
+            @include fbRow;
+            width: fit-content;
+        }
+
+        a {
+            color: $defaultBGColor;
+            font-size: 20px;
+            width: fit-content;
+            height: 100%;
+            padding: 5%;
+            text-align: center;
+        }
+    }
+
+    blockquote {
+        font-size: 24px;
+    }
+
+    #lists {
+
+        .container {
+            @include fbRow;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            width: 100%;
+        }
+
+        article {
+            @include fbCol;
+            width: 50%;
+            margin: 0%;
+        }
+    }
+
+    .small {
+        font-size: 24px;
+    }
+
+    #tables {
+        @include fbCol;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    thead {
+        background-color: $defaultBlue;
+
+        th {
+            color: $defaultBGColor;
+        }
+    }
+
+    tr:nth-child(even) {
+        background-color: $defaultWhite;
+    }
+
+    tr {
+        border-bottom: 1px dotted $defaultGreen;
+    }
+
+    th,
+    td {
+        padding: 1%;
+        text-align: left;
+        border-bottom: 1px dotted $defaultGreen;
+    }
+
+    caption {
+        color: $defaultBlack;
+        font-size: 32px;
+        text-align: left;
+        caption-side: top;
+    }
+
+    footer {
+        background-color: $defaultBlue;
+        height: 20vh;
+
+        ul {
+            @include fbExtend(center, center);
+            width: 100%;
+        }
+    }
+}

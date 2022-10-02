@@ -1,0 +1,78 @@
+@media (min-width: 1000px) {
+
+    p,
+    blockquote {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 2% 8%;
+    }
+
+    header {
+        width: 100%;
+
+        .container {
+            width: 100%;
+            @include fbRow;
+            @include fbExtend(space-between, center);
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .branding {
+            width: 100%;
+        }
+
+        h1 {
+            padding-left: 20%;
+            color: $defaultYellow;
+        }
+
+        ul {
+            @include fbExtend(space-between, center);
+            width: 97%;
+            padding-right: 3%;
+            flex-direction: row;
+        }
+
+        a {
+            font-size: 16px;
+            padding: 1%;
+        }
+
+        a:hover {
+            background-color: $defaultBlack;
+            color: $defaultYellow;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+    }
+
+    #media {
+        li {
+            @include fbRow;
+            flex-wrap: nowrap;
+            padding: 1%;
+        }
+
+        img {
+            width: 20%;
+            padding-right: 3%;
+            padding-bottom: 0%;
+        }
+
+        li:hover {
+            background-color: $defaultYellow;
+        }
+    }
+
+    thead:hover {
+        background-color: $defaultRed;
+    }
+
+
+}

@@ -1,0 +1,25 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: $fontFamily;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: $defaultBGColor;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}

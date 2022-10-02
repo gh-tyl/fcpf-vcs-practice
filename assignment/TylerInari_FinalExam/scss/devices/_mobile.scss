@@ -1,0 +1,149 @@
+@media (min-width: 300px) {
+    nav {
+        display: none;
+    }
+
+    h1 {
+        color: $defaultBlue;
+        font-size: 36px;
+    }
+
+    h2 {
+        color: $defaultIndigo;
+    }
+
+    h3 {
+        color: $defaultGreen;
+    }
+
+    h4 {
+        color: $defaultRed;
+    }
+
+    [class="container"] {
+        @include fbCol;
+        row-gap: 3vh;
+        padding: 8%;
+    }
+
+    .background {
+        @include bgImg("/img/water.jpg", 100%, 80vh);
+        @include fbCol;
+        @include fbExtend(flex-end, center);
+
+
+        h1 {
+            color: $defaultYellow;
+        }
+
+        p {
+            color: $defaultWhite;
+        }
+    }
+
+    #typography {
+        blockquote {
+            padding: 5% 10%;
+        }
+    }
+
+    [class="grid"] {
+        @include fbRow;
+        @include fbExtend(space-between, center);
+        row-gap: 2vh;
+        column-gap: 2vh;
+        flex-wrap: wrap;
+
+        .item {
+            width: 30%;
+
+            img {
+                border-radius: 30px;
+            }
+        }
+    }
+
+    #buttons {
+        .container {
+            @include fbRow;
+            flex-wrap: wrap;
+            column-gap: 1vh;
+        }
+
+        h1 {
+            width: 100%;
+        }
+
+        button {
+            color: $defaultBGColor;
+            padding: 1% 3%;
+            border: 0px;
+            border-radius: 5px;
+        }
+    }
+
+    .btn-default {
+        background-color: $defaultBlack;
+    }
+
+    .btn-cool {
+        background-color: $defaultBlue;
+    }
+
+    .btn-hot {
+        background-color: $defaultRed;
+    }
+
+    .btn-awesome {
+        background-color: $defaultIndigo;
+    }
+
+    #list {
+        // .container {
+        //     @include fbRow;
+        // }
+
+    }
+
+    #root-ul,
+    #root-ol {
+        li {
+            margin-left: 10%;
+        }
+    }
+
+    #media {
+        ol {
+            padding: 0%;
+        }
+
+        li {
+            display: block;
+            padding: 5% 3%;
+            border-top: 1px dotted $defaultRed;
+        }
+
+        li:last-child {
+            border-bottom: 1px dotted $defaultRed;
+        }
+
+        img {
+            width: 30%;
+            float: left;
+            padding: 0% 3% 3% 0%;
+        }
+
+        h2 {
+            color: $defaultBlue;
+        }
+
+        p {
+            color: $defaultBlack;
+        }
+    }
+
+    #tables {
+        display: none;
+    }
+
+}

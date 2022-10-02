@@ -1,0 +1,501 @@
+* {
+    /* SANITIZE */
+    padding: 0%;
+    margin: 0%;
+    font-family: 'JetBrains Mono', monospace;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(175, 215, 240);
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+
+@media (min-width: 300px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+    }
+
+    header article {
+        width: 80%;
+        padding: 5%;
+    }
+
+    header h1 {
+        /* color: rgb(240, 240, 240); */
+        color: rgb(45, 120, 170);
+        font-size: 32px;
+        width: 100%;
+        padding: 1vh;
+        text-align: center;
+    }
+
+    header h2 {
+        display: none;
+    }
+
+    header h6 {
+        color: rgb(45, 120, 170);
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Start hamburger menu */
+    header details {
+        background-color: rgb(45, 120, 170);
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+        box-shadow: 3px 3px 3px 3px rgba(20, 20, 20, 0.35);
+    }
+
+    header summary {
+        color: rgb(175, 215, 240);
+        width: 90%;
+        text-align: right;
+        padding: 2% 5% 2% 5%;
+    }
+
+    header details ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header details li {
+        width: 100%;
+        display: flex;
+    }
+
+    header details a {
+        text-transform: uppercase;
+        color: rgb(175, 215, 240);
+        width: 100%;
+        text-align: right;
+        padding: 2% 5% 2% 5%;
+    }
+
+    header details a:hover {
+        background-color: rgb(175, 215, 240);
+        color: rgb(45, 120, 170);
+    }
+
+    /* End hamburger menu */
+
+
+    nav {
+        width: 100%;
+        display: none;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 2px;
+        box-shadow: 6px 6px 6px 6px rgba(20, 20, 20, 0.35);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    section {
+        background-color: rgb(45, 120, 170);
+        padding: 5vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        border-radius: 10px;
+        box-shadow: 8px 8px 8px 8px rgba(20, 20, 20, 0.35);
+    }
+
+    h2 {
+        width: 100%;
+        color: rgb(175, 215, 240);
+    }
+
+    h3 {
+        width: 100%;
+        color: rgb(45, 120, 170);
+    }
+
+    .about article,
+    .about article aside {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    /* For content place */
+    .about aside,
+    .skills aside,
+    .projects figcaption,
+    .work article,
+    .education aside,
+    .language aside,
+    .sns aside,
+    form {
+        background-color: rgb(175, 215, 240);
+        color: rgb(45, 60, 100);
+        border-radius: 5px;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    /* End for content place */
+
+    .skills article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    .skills ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5vh;
+    }
+
+    .skills li {
+        display: flex;
+    }
+
+    .projects article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vh;
+        align-items: center;
+    }
+
+    .projects h3 {
+        text-align: center;
+    }
+
+    .projects figure {
+        background-color: rgb(15, 65, 95);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2vh;
+        border-radius: 5px;
+        padding: 8%;
+    }
+
+    .projects img {
+        object-fit: contain;
+    }
+
+    .projects figcaption {
+        width: 100%;
+        align-items: center;
+    }
+
+    .projects p {
+        color: rgb(45, 120, 170);
+    }
+
+    .projects a {
+        background-color: rgb(45, 120, 170);
+        color: rgb(175, 215, 240);
+        padding: 2%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px rgba(20, 20, 20, 0.35);
+    }
+
+    .projects a:hover {
+        background-color: rgb(175, 215, 240);
+        color: rgb(45, 120, 170);
+    }
+
+    .education article,
+    .language article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    .language span {
+        color: rgb(45, 120, 170);
+    }
+
+    .sns a {
+        color: rgb(45, 120, 170);
+    }
+
+    .sns span {
+        color: rgb(45, 60, 100);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        align-items: flex-end;
+    }
+
+    input,
+    textarea {
+        width: 96%;
+        padding: 2%;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 1px 1px 1px 1px rgba(20, 20, 20, 0.35);
+    }
+
+    [type="submit"] {
+        color: rgb(175, 215, 240);
+        background-color: rgb(45, 120, 170);
+        width: fit-content;
+        padding: 3%;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px rgba(20, 20, 20, 0.35);
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer aside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer i {
+        color: rgb(45, 120, 170);
+        padding: 5%;
+    }
+
+    footer p {
+        color: rgb(45, 120, 170);
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .links a {
+        color: rgb(45, 120, 170);
+        padding: 3%;
+    }
+}
+
+@media (min-width: 700px) {
+
+    /* font-size */
+    h1 {
+        font-size: 48px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    /* end font-size */
+
+    .skills article {
+        flex-direction: row;
+        border-radius: 5px;
+        justify-content: space-around;
+    }
+
+    .skills aside {
+        width: 40%;
+    }
+
+
+    .skills ul {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills li {
+        width: 100%;
+    }
+
+    .projects figure {
+        background-color: none;
+        width: 30%;
+    }
+
+    .projects img {
+        width: 100%;
+        height: 15vh;
+    }
+
+    .education aside {
+        width: 40%;
+    }
+
+    .sns aside {
+        flex-direction: row;
+    }
+
+    .sns a {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1000px) {
+    header h2 {
+        color: rgb(175, 215, 240);
+        background-color: rgb(45, 120, 170);
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: left;
+        padding: 4vh;
+        padding-left: 5%;
+    }
+
+    header article {
+        padding-top: 20vh;
+    }
+
+    header details {
+        display: none;
+    }
+
+    nav {
+        background-color: rgb(175, 215, 240);
+        display: flex;
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+    }
+
+    nav li {
+        width: 100%;
+        display: flex;
+    }
+
+    nav a {
+        text-transform: uppercase;
+        color: rgb(45, 120, 170);
+        width: 100%;
+        padding: 8%;
+        text-align: center;
+    }
+
+    nav a:hover {
+        color: rgb(175, 215, 240);
+        background-color: rgb(45, 120, 170);
+        width: 100%;
+        padding: 8%;
+        text-align: center;
+    }
+
+    .about article {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about figure {
+        width: 40%;
+        padding: 5%;
+    }
+
+    .about img {
+        height: 100%;
+    }
+
+    .about aside {
+        width: 40%;
+        padding: 5%;
+    }
+
+    .skills aside:hover {
+        box-shadow: 12px 12px 12px 12px rgba(20, 20, 20, 0.35);
+    }
+
+    .projects article {
+        background-color: rgb(15, 65, 95);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        border-radius: 5px;
+    }
+
+    .projects figure {
+        background-color: none;
+        width: 30%;
+    }
+
+    .projects img {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .projects figcaption {
+        height: 35vh;
+        justify-content: space-around;
+    }
+
+    .education article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .links a {
+        font-size: 24px;
+    }
+
+    .links a:hover {
+        color: rgb(45, 100, 150);
+    }
+
+    [type="submit"] {
+        font-size: 12px;
+        padding: 2%;
+    }
+}
